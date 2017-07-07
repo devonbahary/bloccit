@@ -2,3 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.social-btn {
+  background: linear-gradient(20deg, rgba(66,131,244, 0.8), rgba(138, 178, 248, 0.8));
+  position: relative;
+  height: 2rem;
+  padding: 3px 12px;
+  border-radius: 3px;
+  color: white;
+  box-shadow: 1px 1px gray;
+}
+
+.social-btn:hover, .social-btn:active {
+  text-decoration: none;
+  color: white;
+  top: 1px;
+}
