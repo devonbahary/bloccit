@@ -1,0 +1,31 @@
+<h1>Edit Question</h1>
+
+<div class="row">
+  <div class="col-md-4">
+    <p>Guidelines for questions</p>
+    <ul>
+      <li>Better be meaningful.</li>
+      <li>Ask the question without the words "What", "When", "Why", or "How".</li>
+      <li>If you would prefer to ask the question in grunts, send a link to an audio file and a member of our community will get back to you.</li>
+    </ul>
+  </div>
+  <div class="col-md-8">
+    <%= form_for @question do |f| %>
+      <div class="form-group">
+        <%= f.label :title %>
+        <%= f.text_field :title, class: 'form-control', placeholder: 'What is the meaning of life?' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :body %>
+        <%= f.text_area :body, class: 'form-control', rows: 8, placeholder: '42. No seriously, explain your question.' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :resolved %>
+        <%= f.check_box :resolved %>
+      </div>
+      <div class="form-group">
+        <%= f.submit "Save", class: "btn btn-sucess" %>
+      </div>
+    <% end %>
+  </div>
+</div>
